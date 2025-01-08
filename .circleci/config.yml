@@ -1,0 +1,10 @@
+version: 2.1
+
+orbs:
+  maven-deps: moole/dependency-getter@1.0.4  # Replace with your actual Orb namespace and version
+
+workflows:
+  version: 2
+  dependency-check:
+    jobs:
+      - maven-deps/dependency-extraction
